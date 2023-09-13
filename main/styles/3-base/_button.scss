@@ -1,0 +1,15 @@
+.btn {
+  border-radius: 15rem;
+  background-color: $primary-color;
+  color: $white;
+  padding: 0.5rem 2rem;
+  font-weight: 600;
+  @extend .is-size-3;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+
+  &:hover {
+    background-color: $secondary-color;
+    transition: all 0.1s ease-in;
+  }
+}
