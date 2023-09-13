@@ -1,0 +1,44 @@
+$black: #353535;
+$white: #fffcff;
+$green: #6bffb8;
+$blue: #7cfef0;
+$red: #ee6352;
+$yellow: #fac05e;
+
+$primary-bg-color: $black;
+$primary-text-color: $white;
+
+$primary-color: $blue;
+$primary-text-color: $white;
+$secondary-color: $red;
+$accent-color: $yellow;
+
+$primary-font: var(--open-sans-font);
+
+/* =====================
+    * BREAKPOINTS *
+===================== */
+
+$breakpoint-xs: 360px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+$breakpoint-xxxl: 1600px;
+
+/* =====================
+    * FONT-SIZE *
+===================== */
+
+$h1-font-size: 4.0625rem;
+$h2-font-size: 3.75rem;
+$h3-font-size: 3.125rem;
+$h4-font-size: 2.5rem;
+$h5-font-size: 1.68rem;
+
+$p1-font-size: 1.375rem;
+$p2-font-size: 1.125rem;
+$p3-font-size: 1rem;
+$p4-font-size: 0.875rem;
+$p5-font-size: 0.7rem;

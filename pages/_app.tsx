@@ -1,6 +1,20 @@
-import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
+import "@/styles/globals.scss";
+import type { AppProps } from "next/app";
+import { Open_Sans } from "next/font/google";
+
+const opensans = Open_Sans({ subsets: ["latin"] });
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <div>
+      <style jsx global>{`
+        :root {
+          --open-sans-font: ${opensans.style.fontFamily};
+        }
+      `}</style>
+      <>
+        <Component {...pageProps} />
+      </>
+    </div>
+  );
 }
