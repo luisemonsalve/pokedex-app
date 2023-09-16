@@ -2,7 +2,7 @@ import Image from "next/image";
 
 interface Pokemon {
   name: string;
-  weigth: string;
+  weight: string;
   moves: string[];
   image: string;
 }
@@ -12,7 +12,7 @@ interface PokeCardProps {
 }
 
 export default function PokeCard({ data }: PokeCardProps) {
-  const { name, weigth, moves, image } = data;
+  const { name, weight, moves, image } = data;
   return (
     <div className="pokecard">
       <div
@@ -22,7 +22,7 @@ export default function PokeCard({ data }: PokeCardProps) {
         }}
       >
         <div className="pokecard-header-bg"></div>
-        <div className="pokecard-weigth">{weigth} kg</div>
+        <div className="pokecard-weigth">{weight} kg</div>
       </div>
       <div className="pokecard-body">
         <h4 className="pokecard-title">{name}</h4>

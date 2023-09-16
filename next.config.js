@@ -15,7 +15,7 @@ const nextConfig = {
     return config;
   },
   images: {
-    domains: ["assets.pokemon.com"],
+    domains: ["assets.pokemon.com", "www.pokemon.com"],
     formats: ["image/avif", "image/webp"],
   },
 };

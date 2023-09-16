@@ -1,0 +1,149 @@
+{
+  "total": 25,
+  "pokemon": [
+    {
+      "name": "Bulbasaur",
+      "moves": ["Placaje", "Látigo Cepa"],
+      "weight": "6.9",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png"
+    },
+    {
+      "name": "Ivysaur",
+      "moves": ["Placaje", "Látigo Cepa"],
+      "weight": "13.0",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png"
+    },
+    {
+      "name": "Venusaur",
+      "moves": ["Placaje", "Látigo Cepa"],
+      "weight": "100.0",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png"
+    },
+    {
+      "name": "Charmander",
+      "moves": ["Arañazo", "Ascuas"],
+      "weight": "8.5",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png"
+    },
+    {
+      "name": "Charmeleon",
+      "moves": ["Arañazo", "Ascuas"],
+      "weight": "19.0",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png"
+    },
+    {
+      "name": "Charizard",
+      "moves": ["Arañazo", "Ascuas"],
+      "weight": "90.5",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png"
+    },
+    {
+      "name": "Squirtle",
+      "moves": ["Placaje", "Pistola Agua"],
+      "weight": "9.0",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png"
+    },
+    {
+      "name": "Wartortle",
+      "moves": ["Placaje", "Pistola Agua"],
+      "weight": "22.5",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/008.png"
+    },
+    {
+      "name": "Blastoise",
+      "moves": ["Placaje", "Pistola Agua"],
+      "weight": "85.5",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/009.png"
+    },
+    {
+      "name": "Caterpie",
+      "moves": ["Placaje", "Disparo Demora"],
+      "weight": "2.9",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/010.png"
+    },
+    {
+      "name": "Metapod",
+      "moves": ["Placaje", "Duro Concha"],
+      "weight": "9.9",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/011.png"
+    },
+    {
+      "name": "Butterfree",
+      "moves": ["Confusión", "Ataque Ala"],
+      "weight": "32.0",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/012.png"
+    },
+    {
+      "name": "Weedle",
+      "moves": ["Picotazo Venenoso", "Doblebofetón"],
+      "weight": "3.2",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/013.png"
+    },
+    {
+      "name": "Kakuna",
+      "moves": ["Duro Concha", "Toxic"],
+      "weight": "10.0",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/014.png"
+    },
+    {
+      "name": "Beedrill",
+      "moves": ["Picotazo Venenoso", "Ataque Ala"],
+      "weight": "29.5",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/015.png"
+    },
+    {
+      "name": "Pidgey",
+      "moves": ["Gruñido", "Ataque Ala"],
+      "weight": "1.8",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png"
+    },
+    {
+      "name": "Pidgeotto",
+      "moves": ["Tornado", "Ataque Ala"],
+      "weight": "30.0",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/017.png"
+    },
+    {
+      "name": "Pidgeot",
+      "moves": ["Tornado", "Ataque Ala"],
+      "weight": "39.5",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/018.png"
+    },
+    {
+      "name": "Rattata",
+      "moves": ["Placaje", "Ataque Rápido"],
+      "weight": "3.5",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/019.png"
+    },
+    {
+      "name": "Raticate",
+      "moves": ["Placaje", "Hiperrayo"],
+      "weight": "18.5",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/020.png"
+    },
+    {
+      "name": "Spearow",
+      "moves": ["Placaje", "Ataque Ala"],
+      "weight": "2.0",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/021.png"
+    },
+    {
+      "name": "Fearow",
+      "moves": ["Ataque Ala", "Tornado"],
+      "weight": "38.0",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/022.png"
+    },
+    {
+      "name": "Ekans",
+      "moves": ["Mordisco", "Ácido"],
+      "weight": "6.9",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/023.png"
+    },
+    {
+      "name": "Arbok",
+      "moves": ["Mordisco", "Ácido"],
+      "weight": "65.0",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/024.png"
+    }
+  ]
+}
