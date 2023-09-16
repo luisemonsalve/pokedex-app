@@ -1,0 +1,58 @@
+$navbar-heigth: 5rem;
+
+.navbar {
+  width: 100vw;
+  height: $navbar-heigth;
+  background-color: rgba($primary-color, 1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  gap: 1rem;
+  z-index: 100;
+
+  &-logo {
+    width: 10rem;
+  }
+  &-title {
+    @extend .fs-4;
+    font-weight: 900;
+  }
+  &-space {
+    flex-grow: 1;
+  }
+  &-user {
+    position: relative;
+    width: 8rem;
+    cursor: pointer;
+    padding: 0.5rem;
+
+    &-picture {
+    }
+    &-name {
+    }
+    &-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      padding: 1rem 1rem;
+      padding-top: 2rem;
+      flex-direction: column;
+      gap: 1rem;
+      background-color: $primary-color;
+      width: 9rem;
+      display: none;
+
+      &-item {
+      }
+    }
+
+    &:hover {
+      & .navbar-user-menu {
+        display: flex;
+      }
+    }
+  }
+}

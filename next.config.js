@@ -14,6 +14,10 @@ const nextConfig = {
     });
     return config;
   },
+  images: {
+    domains: ["assets.pokemon.com"],
+    formats: ["image/avif", "image/webp"],
+  },
 };
 
 module.exports = nextConfig;
