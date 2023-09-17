@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "./styles.module.scss";
 import { Props, ScriptProps } from "next/script";
 import React, { ReactNode, useEffect, useState } from "react";
+import { User } from "@/main/types/User";
 
 interface AuthLayoutProps {
   children: ReactNode;
@@ -9,11 +10,6 @@ interface AuthLayoutProps {
     title?: string;
     description?: string;
   };
-}
-
-interface User {
-  name: string;
-  picture: string;
 }
 
 export default function AuthLayout({ children, meta = {} }: AuthLayoutProps) {

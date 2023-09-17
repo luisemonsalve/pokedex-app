@@ -121,7 +121,9 @@ export default function SignIn() {
             ></span>
           </div>
 
-          <span className="input-error"></span>
+          {!password && (
+            <span className="input-error">Este campo es requerido</span>
+          )}
         </div>
       </div>
       <div className={styles.cardBottom}>

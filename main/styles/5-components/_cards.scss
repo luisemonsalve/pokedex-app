@@ -61,3 +61,25 @@
     }
   }
 }
+
+.pokemon {
+  display: grid;
+  grid-template-areas: "image info" "image details";
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 12rem;
+
+  &-image {
+    grid-area: image;
+  }
+  &-info {
+    grid-area: info;
+  }
+  &-details {
+    grid-area: details;
+
+    & span {
+      color: $secondary-color;
+      font-weight: 600;
+    }
+  }
+}

@@ -36,7 +36,8 @@ export default function handler(
         valid: true,
         message: "Inicio exitoso",
         user: {
-          name: user.email,
+          name: user.name,
+          email: user.email,
           picture: user.picture,
         },
       });

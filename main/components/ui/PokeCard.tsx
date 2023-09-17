@@ -1,20 +1,20 @@
+import { Pokemon } from "@/main/types/Modal";
 import Image from "next/image";
-
-interface Pokemon {
-  name: string;
-  weight: string;
-  moves: string[];
-  image: string;
-}
 
 interface PokeCardProps {
   data: Pokemon;
+  handleSelect: any;
 }
 
-export default function PokeCard({ data }: PokeCardProps) {
+export default function PokeCard({ data, handleSelect }: PokeCardProps) {
   const { name, weight, moves, image } = data;
   return (
-    <div className="pokecard">
+    <div
+      className="pokecard"
+      onClick={() => {
+        handleSelect(data);
+      }}
+    >
       <div
         className="pokecard-header"
         style={{

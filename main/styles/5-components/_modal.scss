@@ -1,0 +1,34 @@
+.modal {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  grid-template-areas: "main";
+
+  &.is-active {
+    display: grid;
+  }
+
+  &-bg {
+    grid-area: main;
+    background-color: rgba($black, 0.5);
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+  }
+
+  &-content {
+    z-index: 1;
+    grid-area: main;
+    width: 50rem;
+    align-self: center;
+    justify-self: center;
+    background-color: $white;
+    color: $black;
+    padding: 2rem;
+    border-radius: 15px;
+  }
+}

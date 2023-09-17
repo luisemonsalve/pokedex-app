@@ -1,18 +1,16 @@
 import useUser from "@/main/lib/useUser";
 import PokeCard from "../../ui/PokeCard";
 import styles from "./styles.module.scss";
+import Modal from "../../ui/Modal";
+import { Pokemon } from "@/main/types/Modal";
+import { useState } from "react";
 
 interface CardsContainerProps {
   data: {
     total?: number;
     page?: number;
     pages?: number;
-    pokemon?: {
-      name: string;
-      weight: string;
-      image: string;
-      moves: string[];
-    }[];
+    pokemon?: Pokemon[];
   };
   changePage: any;
 }
@@ -22,11 +20,31 @@ export default function CardsContainer({
   changePage,
 }: CardsContainerProps) {
   const { pokemon, pages = 1, page = 1 } = data;
+  const [selectedPokemon, setSelectedPokemon] = useState(
+    pokemon ? pokemon[0] : undefined
+  );
+  const [showModal, setShowModal] = useState(false);
+
+  const handleSelect = (poke: Pokemon) => {
+    setSelectedPokemon(poke);
+    setShowModal(true);
+  };
 
   return (
     <div className={styles.cardsContainer}>
+      {selectedPokemon && (
+        <Modal
+          data={selectedPokemon}
+          showModal={showModal}
+          setShowModal={setShowModal}
+        />
+      )}
       {pokemon?.map((item, i) => (
-        <PokeCard key={i} data={{ ...item, name: `${item.name}` }} />
+        <PokeCard
+          key={i}
+          data={{ ...item, name: `${item.name}` }}
+          handleSelect={handleSelect}
+        />
       ))}
       <div className="paginator">
         <div

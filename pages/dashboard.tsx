@@ -9,7 +9,7 @@ import LoadingLayout from "@/main/components/layouts/LoadingLayout";
 
 export default function Dashboard() {
   const [page, setPage] = useState(0);
-  const { isLoadUser } = useUser({
+  const { user, isLoadUser } = useUser({
     redirectTo: "/",
   });
 
@@ -23,7 +23,7 @@ export default function Dashboard() {
   }
 
   return (
-    <MainLayout>
+    <MainLayout user={user}>
       <CardsContainer data={data} changePage={setPage}></CardsContainer>
     </MainLayout>
   );

@@ -3,12 +3,8 @@
     {
       "email": "luisem0011@gmail.com",
       "password": "pass0011",
-      "picture": "sss"
-    },
-    {
-      "email": "user2",
-      "password": "pass22",
-      "picture": "sss2"
+      "name": "Luis",
+      "picture": "/assets/user1.png"
     }
   ]
 }

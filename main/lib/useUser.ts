@@ -16,17 +16,16 @@ export default function useUser({
       router.push(redirectTo);
       return { isLoadUser: false };
     };
+    user = <User>validateToken();
 
     useEffect(() => {
-      // eslint-disable-next-line react-hooks/exhaustive-deps
-      user = <User>validateToken();
       if (
         (!redirectIfFound && !user?.name) ||
         (redirectIfFound && user?.name)
       ) {
         redirect();
       }
-    }, [redirectIfFound, redirectTo, router, user]);
+    }, [redirect, redirectIfFound, redirectTo, router, user]);
 
     return { user, isLoadUser: true };
   } catch (error) {
