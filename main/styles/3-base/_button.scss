@@ -12,4 +12,35 @@
     background-color: $secondary-color;
     transition: all 0.1s ease-in;
   }
+
+  &.is-loading {
+    color: transparent !important;
+    pointer-events: none;
+    position: relative;
+    height: 3.5rem;
+
+    @keyframes spinner-border {
+      to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+
+    &::after {
+      position: absolute;
+      left: calc(50% - 0.8em);
+      top: calc(50% - 0.8em);
+      -webkit-animation: spinner-border 0.75s linear infinite;
+      animation: spinner-border 0.75s linear infinite;
+      border-radius: 290486px;
+      background: transparent;
+      border-color: transparent #ffffff #ffffff;
+      border-style: solid;
+      border-width: 1.5px;
+      content: "";
+      height: 1.5rem;
+      width: 1.5rem;
+      cursor: not-allowed !important;
+    }
+  }
 }

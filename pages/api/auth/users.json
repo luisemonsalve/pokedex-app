@@ -1,16 +1,14 @@
 {
   "users": [
     {
-      "username": "user",
-      "password": "pass"
+      "email": "luisem0011@gmail.com",
+      "password": "pass0011",
+      "picture": "sss"
     },
     {
-      "username": "",
-      "password": ""
-    },
-    {
-      "username": "",
-      "password": ""
+      "email": "user2",
+      "password": "pass22",
+      "picture": "sss2"
     }
   ]
 }
