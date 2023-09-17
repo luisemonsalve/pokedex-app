@@ -1,3 +1,4 @@
+import useUser from "@/main/lib/useUser";
 import PokeCard from "../../ui/PokeCard";
 import styles from "./styles.module.scss";
 
@@ -21,10 +22,14 @@ export default function CardsContainer({
   changePage,
 }: CardsContainerProps) {
   const { pokemon, pages = 1, page = 1 } = data;
+  const { user } = useUser({
+    redirectTo: "/",
+  });
+
   return (
     <div className={styles.cardsContainer}>
       {pokemon?.map((item, i) => (
-        <PokeCard key={i} data={{ ...item, name: `${i + 1} ${item.name}` }} />
+        <PokeCard key={i} data={{ ...item, name: `${item.name}` }} />
       ))}
       <div className="paginator">
         <div

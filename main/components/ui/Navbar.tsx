@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { logout } from "../../lib/auth";
 
 interface NavbarProps {}
 
@@ -15,7 +16,9 @@ export default function Navbar({}: NavbarProps) {
         <div className="navbar-user-name">User</div>
         <div className="navbar-user-menu">
           <div className="navbar-user-menu-item">Ver perfil</div>
-          <div className="navbar-user-menu-item">Cerrar sesión</div>
+          <div className="navbar-user-menu-item" onClick={logout}>
+            Cerrar sesión
+          </div>
         </div>
       </div>
     </div>

@@ -1,11 +1,21 @@
 import { useRouter } from "next/router";
 import styles from "./styles.module.scss";
+import useUser from "@/main/lib/useUser";
+import { loginUser } from "@/main/lib/auth";
 
 export default function SignIn() {
   const router = useRouter();
 
-  const validateAuth = () => {
-    router.push("/dashboard");
+  useUser({
+    redirectTo: "/dashboard",
+    redirectIfFound: true,
+  });
+
+  const handleLogin = () => {
+    loginUser({
+      name: "ssss",
+      picture: "sss",
+    });
   };
 
   return (
@@ -41,8 +51,8 @@ export default function SignIn() {
         </div>
       </div>
       <div className={styles.cardBottom}>
-        <button className="btn" onClick={validateAuth}>
-          Iniciar sesión
+        <button className="btn" onClick={handleLogin}>
+          Continuar
         </button>
       </div>
     </div>
