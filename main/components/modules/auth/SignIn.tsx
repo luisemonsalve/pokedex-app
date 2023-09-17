@@ -112,7 +112,6 @@ export default function SignIn() {
               aria-label="password"
               placeholder="Ingrega la contraseña"
               value={password}
-              onKeyDown={handleLogin}
               onChange={(e) => setPassword(e.target.value)}
             ></input>
             <span

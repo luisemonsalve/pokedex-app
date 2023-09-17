@@ -23,7 +23,13 @@ export default function Dashboard() {
   }
 
   return (
-    <MainLayout user={user}>
+    <MainLayout
+      user={user}
+      meta={{
+        title: "Dashboard | Pokédex",
+        description: "Dashboard simple que muestra 24 pokemones",
+      }}
+    >
       <CardsContainer data={data} changePage={setPage}></CardsContainer>
     </MainLayout>
   );

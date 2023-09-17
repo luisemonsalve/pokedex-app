@@ -13,7 +13,11 @@ export default function Home() {
     return <LoadingLayout />;
   } else {
     return (
-      <AuthLayout>
+      <AuthLayout
+        meta={{
+          title: " Pokédex",
+        }}
+      >
         <SignIn />
       </AuthLayout>
     );

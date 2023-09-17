@@ -5,6 +5,12 @@
       "password": "pass0011",
       "name": "Luis",
       "picture": "/assets/user1.png"
+    },
+    {
+      "email": "user@example.com",
+      "password": "pass0011",
+      "name": "Ash",
+      "picture": "/assets/user1.png"
     }
   ]
 }

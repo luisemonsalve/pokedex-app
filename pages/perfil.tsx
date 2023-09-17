@@ -13,7 +13,13 @@ export default function Dashboard() {
   }
 
   return (
-    <MainLayout user={user}>
+    <MainLayout
+      user={user}
+      meta={{
+        title: "Perfil | Pokédex",
+        description: "Sección con detalles del usuario logueado",
+      }}
+    >
       <ProfileView user={user} />
     </MainLayout>
   );

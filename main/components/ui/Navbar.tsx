@@ -13,11 +13,21 @@ export default function Navbar({ user }: NavbarProps) {
       <div className="navbar-logo">
         <Image src="/assets/logos/monoma.png" alt="" fill className="image" />
       </div>
-      <div className="navbar-title">Pokédex</div>
+      <div className="navbar-title">
+        <Link href={"/dashboard"}>Pokédex</Link>
+      </div>
       <div className="navbar-space"></div>
       <div className="navbar-user">
-        <div className="navbar-user-picture"></div>
+        <div className="navbar-user-picture">
+          <Image
+            alt="avatar"
+            src={user?.picture || ""}
+            className="image"
+            fill
+          />
+        </div>
         <div className="navbar-user-name">{user?.name}</div>
+        <span className="navbar-user-icon"></span>
         <div className="navbar-user-menu">
           <div className="navbar-user-menu-item">
             <Link href={"/perfil"}>Ver perfil</Link>

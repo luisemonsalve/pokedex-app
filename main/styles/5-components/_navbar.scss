@@ -28,10 +28,26 @@ $navbar-heigth: 5rem;
     min-width: 8rem;
     cursor: pointer;
     padding: 0.5rem;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
 
     &-picture {
+      overflow: hidden;
+      border-radius: 50%;
+      width: 2.5rem;
+      aspect-ratio: 1/1;
+      background-color: $white;
     }
-    &-name {
+    &-icon {
+      width: 1rem;
+      height: 1rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url("/assets/icons/arrow.svg");
     }
     &-menu {
       position: absolute;
