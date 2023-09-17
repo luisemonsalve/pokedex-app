@@ -6,7 +6,6 @@ import { fetcher } from "@/main/lib/fetcher";
 import { useState } from "react";
 import useUser from "@/main/lib/useUser";
 import LoadingLayout from "@/main/components/layouts/LoadingLayout";
-import { getUser } from "@/main/lib/auth";
 
 export default function Dashboard() {
   const [page, setPage] = useState(0);
