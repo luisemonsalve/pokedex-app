@@ -22,9 +22,6 @@ export default function CardsContainer({
   changePage,
 }: CardsContainerProps) {
   const { pokemon, pages = 1, page = 1 } = data;
-  const { user } = useUser({
-    redirectTo: "/",
-  });
 
   return (
     <div className={styles.cardsContainer}>

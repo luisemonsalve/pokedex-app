@@ -6,11 +6,6 @@ import { loginUser } from "@/main/lib/auth";
 export default function SignIn() {
   const router = useRouter();
 
-  useUser({
-    redirectTo: "/dashboard",
-    redirectIfFound: true,
-  });
-
   const handleLogin = () => {
     loginUser({
       name: "ssss",

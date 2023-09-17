@@ -33,3 +33,44 @@
     padding-top: $navbar-heigth;
   }
 }
+
+.loadingContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  gap: 1rem;
+
+  background-image: url("/assets/backgrounds/auth-bg.jpg");
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+
+  & > &Icon {
+    width: 4rem;
+    height: 4rem;
+    animation: up-dowm 0.6s ease-in-out infinite alternate;
+
+    &:nth-child(2) {
+      animation-delay: 0.3s;
+    }
+
+    &:nth-child(3) {
+      animation-delay: 0.5s;
+    }
+  }
+}
+
+@keyframes up-dowm {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0.8;
+    transform: translateY(2rem);
+  }
+}

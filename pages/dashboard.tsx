@@ -3,18 +3,24 @@ import CardsContainer from "@/main/components/modules/dasboard/CardsContainer";
 
 import useSWR from "swr";
 import { fetcher } from "@/main/lib/fetcher";
-import Error from "next/error";
 import { useState } from "react";
+import useUser from "@/main/lib/useUser";
+import LoadingLayout from "@/main/components/layouts/LoadingLayout";
+import { getUser } from "@/main/lib/auth";
 
 export default function Dashboard() {
   const [page, setPage] = useState(0);
+  const { isLoadUser } = useUser({
+    redirectTo: "/",
+  });
 
   const { data, error, isLoading } = useSWR(
     `/api/pokedex?page=${page}`,
     fetcher
   );
-  if (isLoading) {
-    <div>Loading</div>;
+
+  if (isLoading || !isLoadUser) {
+    return <LoadingLayout />;
   }
 
   return (
