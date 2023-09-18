@@ -22,7 +22,7 @@ export default function PokeCard({ data, handleSelect }: PokeCardProps) {
         }}
       >
         <div className="pokecard-header-bg"></div>
-        <div className="pokecard-weigth">{weight} kg</div>
+        <div className="pokecard-weigth">{weight} </div>
       </div>
       <div className="pokecard-body">
         <h4 className="pokecard-title">{name}</h4>
