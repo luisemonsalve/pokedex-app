@@ -30,5 +30,9 @@
     color: $black;
     padding: 2rem;
     border-radius: 15px;
+
+    @include media(sm) {
+      width: 90%;
+    }
   }
 }
