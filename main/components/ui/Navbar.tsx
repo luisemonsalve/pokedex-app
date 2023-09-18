@@ -10,12 +10,12 @@ interface NavbarProps {
 export default function Navbar({ user }: NavbarProps) {
   return (
     <div className="navbar">
-      <div className="navbar-logo">
+      <Link href={"/dashboard"} className="navbar-logo">
+        <div className="navbar-title">Pokédex</div>
+
         <Image src="/assets/logos/monoma.png" alt="" fill className="image" />
-      </div>
-      <div className="navbar-title">
-        <Link href={"/dashboard"}>Pokédex</Link>
-      </div>
+      </Link>
+      <div></div>
       <div className="navbar-space"></div>
       <div className="navbar-user">
         <div className="navbar-user-picture">
